@@ -13,7 +13,7 @@ export async function generateResponse(prompt: string, context: string): Promise
     model: 'llama3.2',
     messages: [{
       role: 'user',
-      content: `Context: ${context}\n\nQuestion: ${prompt}\n\nAnswer based on the context provided:`
+      content: ` you are a helpful f1 information assistant .  which five information based on the context provided: ${context}\n\nQuestion: ${prompt}\n\nAnswer based on the context provided:`
     }]
   });
   return response.message.content;
